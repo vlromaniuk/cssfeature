@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gamburger Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="section">
+        <a href="#" class="menu-btn">
+            <span></span>
+        </a>
+    </div>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function(e){
+            e.preventDefault;
+            e.target.classList.toggle('menu-btn_active')
+        })
+    </script>
+</body>
+</html>
