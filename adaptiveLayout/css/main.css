@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.section{
+    background-color: #f2395a;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+.heading{
+    margin-left: 20%;
+}
+.phone,
+.tablet,
+.desctop{
+    background: #fff;
+    box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, .3);
+    position: absolute;
+    bottom: 0;
+    transition: 1s;
+    transform: translateY(100%);
+}
+.section:hover .phone,
+.section:hover .desctop,
+.section:hover .tablet{
+    transform: translateY(20px) rotateY(-15deg);
+}
+.phone{
+    width: 200px;
+    height: 280px;
+    left: 5%;
+    z-index: 3;
+    transition-delay: .2s;
+}
+.tablet{
+    width: 360px;
+    height: 380px;
+    left: 10%;
+    z-index: 1;
+    transition-delay: .4s;
+}
+.desctop{
+    width: 680px;
+    height: 480px;
+    left: 15%;
+    transition-delay: .6s;
+}
